@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Gastos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Gastos</h1>
+        <nav>
+            <button id="logoutButton">Cerrar Sesión</button>
+            <a href="categories.html">Ir a Categorías</a>
+        </nav>
+        <form id="expenseForm">
+            <input type="text" id="expenseTitle" placeholder="Título del gasto" required>
+            <input type="number" id="expenseAmount" placeholder="Monto" required>
+            <input type="date" id="expenseDate" required>
+            <select id="expenseCategory" required>
+                <option value="">Seleccionar Categoría</option>
+            </select>
+            <button type="submit">Registrar Gasto</button>
+        </form>
+        <div id="expensesList"></div>
+    </div>
+    <script type="module" src="./src/utils/main.js"></script>
+    <script type="module" src="./src/expenses.js"></script>
+</body>
+</html>
